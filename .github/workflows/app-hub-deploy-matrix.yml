@@ -1,9 +1,10 @@
 name: DHIS2 Deploy Matrix
 
-# Requirement
+# Requirements
 
 ## Secrets:
-## D2_PASSWORD
+## DHIS2_DEBUG_PASSWORD
+## DHIS2_PLAY_PASSWORD
 
 # Controls when the action will run.
 on:
