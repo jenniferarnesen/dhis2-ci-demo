@@ -1,0 +1,38 @@
+name: App Hub Publish
+
+env:
+    D2_APP_HUB_API_KEY: ${{secrets.D2_APP_HUB_API_KEY}}
+    DHIS2_INSTANCE_BASE_URL: 'https://debug.dhis2.org/dev'
+    DHIS2_INSTANCE_USERNAME: 'admin'
+
+# Controls when the action will run.
+on:
+    # Triggers the workflow when a new release is created
+    release:
+        types: [created]
+
+    # Allows you to run this workflow manually from the Actions tab
+    workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+
+    deploy:
+        # Wait for test to succeed before publishing
+        needs: [test]
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - uses: actions/setup-node@v2
+              with:
+                  node-version: lts/*
+                  cache: "yarn"
+
+            - name: Install JS dependencies
+              run: yarn install --frozen-lockfile
+
+            - name: Build
+              run: yarn build
+            # Publish to the App Hub
+            - name: Release to DHIS2 App Hub
+              run: yarn run d2-app-scripts deploy ${{env.DHIS2_INSTANCE_BASE_URL}} --username ${{DHIS2_INSTANCE_USERNAME}}
