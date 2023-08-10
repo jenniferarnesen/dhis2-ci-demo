@@ -5,7 +5,6 @@ name: DHIS2 Deploy
 ## Secrets:
 ## D2_PASSWORD
 env:
-    D2_APP_HUB_API_KEY: ${{secrets.D2_APP_HUB_API_KEY}}
     DHIS2_INSTANCE_BASE_URL: 'https://debug.dhis2.org/dev'
     DHIS2_INSTANCE_USERNAME: 'admin'
     D2_PASSWORD: ${{secrets.D2_PASSWORD}}
@@ -25,18 +24,18 @@ jobs:
     deploy:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v2
-            - uses: actions/setup-node@v2
+            - uses: actions/checkout@v3
+            - uses: actions/setup-node@v3
               with:
                   node-version: lts/*
-                  cache: "yarn"
+                  cache: yarn
 
             - name: Install JS dependencies
               run: yarn install --frozen-lockfile
 
             - name: Build
               run: yarn build
-            # Publish to the App Hub
+            # Deploy to DHIS2 instance
             - name: Deploy to DHIS2 instance
               run: yarn run d2-app-scripts deploy ${{env.DHIS2_INSTANCE_BASE_URL}} --username ${{env.DHIS2_INSTANCE_USERNAME}}
                   

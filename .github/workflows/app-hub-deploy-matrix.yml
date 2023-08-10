@@ -15,7 +15,6 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-
     deploy:
         strategy:
             matrix:
@@ -30,11 +29,11 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             # include does not support dynamic values, so we need to set the password as an environment variable
-            # NOTE: matrix.name needs to match 
+            # NOTE: DHIS2_${{matrix.name}}_PASSWORD needs to match env-variables!
             - name: Set password environment variable
               run: echo "D2_PASSWORD=$(echo $DHIS2_${{ matrix.name }}_PASSWORD)" >> $GITHUB_ENV
-            - uses: actions/checkout@v2
-            - uses: actions/setup-node@v2
+            - uses: actions/checkout@v3
+            - uses: actions/setup-node@v3
               with:
                   node-version: lts/*
                   cache: "yarn"
