@@ -37,6 +37,6 @@ jobs:
             - name: Build
               run: yarn build
             # Publish to the App Hub
-            - name: Release to DHIS2 App Hub
+            - name: Deploy to DHIS2 instance
               run: yarn run d2-app-scripts deploy ${{env.DHIS2_INSTANCE_BASE_URL}} --username ${{env.DHIS2_INSTANCE_USERNAME}}
                   
