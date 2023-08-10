@@ -22,16 +22,13 @@ jobs:
                 baseurl: ['https://debug.dhis2.org/dev', 'https://play.dhis2.org/dev']
                 include: 
                   - baseurl: 'https://debug.dhis2.org/dev'
-                    name: 'DEBUG'
+                    name: 'DEBUG' # needs to match the environment variable name
                     username: 'admin'
                   - baseurl: 'https://play.dhis2.org/dev'
                     name: 'PLAY'
                     username: 'admin'
         runs-on: ubuntu-latest
         steps:
-            # include does not support dynamic values, so we need to set the password as an environment variable
-            - name: Set password environment variable
-              run: echo "D2_PASSWORD=$(echo $DHIS2_${{ matrix.name }}_PASSWORD)" >> $GITHUB_ENV
             - uses: actions/checkout@v2
             - uses: actions/setup-node@v2
               with:
@@ -43,7 +40,11 @@ jobs:
 
             - name: Build
               run: yarn build
-            # Publish to the App Hub
+            # include does not support dynamic values, so we need to set the password as an environment variable
+            # NOTE: matrix.name needs to match 
+            - name: Set password environment variable
+              run: echo "D2_PASSWORD=$(echo $DHIS2_${{ matrix.name }}_PASSWORD)" >> $GITHUB_ENV
+  
             - name: Deploy to DHIS2 instance
               env:
                 D2_PASSWORD: ${{ matrix.password }}
