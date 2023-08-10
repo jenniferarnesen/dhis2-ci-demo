@@ -1,9 +1,14 @@
 name: DHIS2 Deploy
 
+# Requirement
+
+## Secrets:
+## D2_PASSWORD
 env:
     D2_APP_HUB_API_KEY: ${{secrets.D2_APP_HUB_API_KEY}}
     DHIS2_INSTANCE_BASE_URL: 'https://debug.dhis2.org/dev'
     DHIS2_INSTANCE_USERNAME: 'admin'
+    D2_PASSWORD: ${{secrets.D2_PASSWORD}}
 
 # Controls when the action will run.
 on:
@@ -34,3 +39,4 @@ jobs:
             # Publish to the App Hub
             - name: Release to DHIS2 App Hub
               run: yarn run d2-app-scripts deploy ${{env.DHIS2_INSTANCE_BASE_URL}} --username ${{env.DHIS2_INSTANCE_USERNAME}}
+                  
