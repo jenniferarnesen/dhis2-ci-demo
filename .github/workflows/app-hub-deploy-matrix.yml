@@ -5,7 +5,9 @@ name: DHIS2 Deploy Matrix
 ## Secrets:
 ## DHIS2_DEBUG_PASSWORD
 ## DHIS2_PLAY_PASSWORD
-
+env:
+    DHIS2_PLAY_PASSWORD: '${{ secrets.DHIS2_PLAY_PASSWORD }}'
+    DHIS2_DEBUG_PASSWORD: ${{ secrets.DHIS2_DEBUG_PASSWORD }}
 # Controls when the action will run.
 on:
     # Allows you to run this workflow manually from the Actions tab
@@ -21,10 +23,10 @@ jobs:
                 include: 
                   - baseurl: 'https://debug.dhis2.org/dev'
                     username: 'admin'
-                    password: ${{secrets.DHIS2_DEBUG_PASSWORD}}
+                    password: ${{ env.DHIS2_DEBUG_PASSWORD }}
                   - baseurl: 'https://play.dhis2.org/dev'
                     username: 'admin'
-                    password: ${{secrets.DHIS2_PLAY_PASSWORD }}
+                    password: ${{ env.DHIS2_PLAY_PASSWORD }}
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
