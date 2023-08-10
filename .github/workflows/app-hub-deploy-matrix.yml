@@ -18,7 +18,6 @@ jobs:
     deploy:
         strategy:
             matrix:
-                baseurl: ['https://debug.dhis2.org/dev', 'https://play.dhis2.org/dev']
                 include: 
                   - baseurl: 'https://debug.dhis2.org/dev'
                     name: 'DEBUG' # needs to match the environment variable name
