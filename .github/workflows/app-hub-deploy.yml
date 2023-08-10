@@ -1,4 +1,4 @@
-name: App Hub Publish
+name: DHIS2 Deploy
 
 env:
     D2_APP_HUB_API_KEY: ${{secrets.D2_APP_HUB_API_KEY}}
