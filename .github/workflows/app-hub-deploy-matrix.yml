@@ -25,6 +25,8 @@ jobs:
                   - baseurl: 'https://play.dhis2.org/dev'
                     username: 'admin'
                     password-env: 'DHIS2_PLAY_PASSWORD'
+        
+        name: Deploy (${{ matrix.baseurl }})
         runs-on: ubuntu-latest
         steps:
             # include does not support dynamic values, so we need to set the password as an environment variable
