@@ -28,9 +28,8 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             # include does not support dynamic values, so we need to set the password as an environment variable
-            # NOTE: DHIS2_${{matrix.name}}_PASSWORD needs to match env-variables!
             - name: Set password environment variable
-              run: echo "D2_PASSWORD=$(echo ${{ matrix.password-env }})" >> $GITHUB_ENV
+              run: echo "D2_PASSWORD=$(echo $${{ matrix.password-env }})" >> $GITHUB_ENV
             - uses: actions/checkout@v3
             - uses: actions/setup-node@v3
               with:
