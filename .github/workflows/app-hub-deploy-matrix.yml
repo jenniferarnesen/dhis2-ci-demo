@@ -1,0 +1,44 @@
+name: DHIS2 Deploy Matrix
+
+# Requirement
+
+## Secrets:
+## D2_PASSWORD
+
+# Controls when the action will run.
+on:
+    # Allows you to run this workflow manually from the Actions tab
+    workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+
+    deploy:
+        strategy:
+            matrix:
+                baseurl: ['https://debug.dhis2.org/dev', 'https://play.dhis2.org/dev']
+                include: 
+                  - baseurl: 'https://debug.dhis2.org/dev'
+                    username: 'admin'
+                    password: ${{secrets.DHIS2_DEBUG_PASSWORD}}
+                  - baseurl: 'https://play.dhis2.org/dev'
+                    username: 'admin'
+                    password: ${{secrets.DHIS2_PLAY_PASSWORD }}
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - uses: actions/setup-node@v2
+              with:
+                  node-version: lts/*
+                  cache: "yarn"
+
+            - name: Install JS dependencies
+              run: yarn install --frozen-lockfile
+
+            - name: Build
+              run: yarn build
+            # Publish to the App Hub
+            - name: Deploy to DHIS2 instance
+              env:
+                D2_PASSWORD: ${{ matrix.password }}
+              run: yarn run d2-app-scripts deploy ${{ matrix.baseurl }} --username ${{ matrix.username }}
