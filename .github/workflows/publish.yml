@@ -59,11 +59,11 @@ jobs:
             - name: Install
               run: yarn install --frozen-lockfile
 
-            - name: Release to DHIS2 App Hub
-              run: yarn run d2-app-scripts publish
-
             - name: Release to GitHub
               uses: dhis2/action-semantic-release@only-github-publish
               with:
                   publish-github: true
                   github-token: ${{ env.GH_TOKEN }}
+
+            - name: Release to DHIS2 App Hub
+              run: yarn run d2-app-scripts publish
