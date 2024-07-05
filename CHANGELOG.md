@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/jenniferarnesen/dhis2-ci-demo/compare/v1.0.1...v1.0.2) (2024-07-05)
+
+
+### Bug Fixes
+
+* wrong commit message ([d99dc95](https://github.com/jenniferarnesen/dhis2-ci-demo/commit/d99dc951e0bd7cd9341e6438eac79153a1029cfe))
+
 ## [1.0.1](https://github.com/jenniferarnesen/dhis2-ci-demo/compare/v1.0.0...v1.0.1) (2024-07-05)
 
 
