@@ -58,7 +58,7 @@ jobs:
             - name: Install
               run: yarn install --frozen-lockfile
 
-            - uses: dhis2/action-semantic-release@master
+            - uses: dhis2/action-semantic-release@fix-include-main-branch
               with:
                   publish-apphub: false
                   publish-github: false
