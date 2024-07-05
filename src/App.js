@@ -16,13 +16,15 @@ const MyApp = () => (
                 if (error) return <span>ERROR</span>
                 if (loading) return <span>...</span>
                 return (
-                    <>
-                        <h1>
-                            {i18n.t('Hello {{name}}, you are great!', { name: data.me.name })}
-                        </h1>
-                        <h3>{i18n.t('Welcome to DHIS2!')}</h3>
-                    </>
-                )
+                  <>
+                    <h1>
+                      {i18n.t("Hello {{name}}, this is where the app goes!", {
+                        name: data.me.name,
+                      })}
+                    </h1>
+                    <h3>{i18n.t("Welcome to DHIS2!")}</h3>
+                  </>
+                );
             }}
         </DataQuery>
     </div>
