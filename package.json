@@ -11,7 +11,7 @@
     "deploy": "d2-app-scripts deploy"
   },
   "devDependencies": {
-    "@dhis2/cli-app-scripts": "^10.3.9",
+    "@dhis2/cli-app-scripts": "^11.6.1",
     "@semantic-release/changelog": "^5",
     "@semantic-release/exec": "^6.0.3",
     "@semantic-release/git": "^9",
