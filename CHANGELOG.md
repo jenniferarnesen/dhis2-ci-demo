@@ -1,3 +1,10 @@
+## [1.0.8](https://github.com/jenniferarnesen/dhis2-ci-demo/compare/v1.0.7...v1.0.8) (2024-07-08)
+
+
+### Bug Fixes
+
+* rename env var ([002663d](https://github.com/jenniferarnesen/dhis2-ci-demo/commit/002663db3aac9a0e884ab0d2f6d2b599ad13979e))
+
 ## [1.0.7](https://github.com/jenniferarnesen/dhis2-ci-demo/compare/v1.0.6...v1.0.7) (2024-07-08)
 
 
