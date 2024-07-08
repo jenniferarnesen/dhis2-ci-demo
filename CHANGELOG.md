@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/jenniferarnesen/dhis2-ci-demo/compare/v1.0.5...v1.0.6) (2024-07-08)
+
+
+### Bug Fixes
+
+* add apphub publish ([8e718cd](https://github.com/jenniferarnesen/dhis2-ci-demo/commit/8e718cdd89c41ae6af9d7aecd06a4d83e76447e4))
+
 ## [1.0.5](https://github.com/jenniferarnesen/dhis2-ci-demo/compare/v1.0.4...v1.0.5) (2024-07-08)
 
 
