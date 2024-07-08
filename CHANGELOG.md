@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/jenniferarnesen/dhis2-ci-demo/compare/v1.0.6...v1.0.7) (2024-07-08)
+
+
+### Bug Fixes
+
+* maybe apphub token was missing ([a61b8d4](https://github.com/jenniferarnesen/dhis2-ci-demo/commit/a61b8d4094af5fbc2e7a83bf63d4d1c158308ea5))
+
 ## [1.0.6](https://github.com/jenniferarnesen/dhis2-ci-demo/compare/v1.0.5...v1.0.6) (2024-07-08)
 
 
