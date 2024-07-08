@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/jenniferarnesen/dhis2-ci-demo/compare/v1.0.4...v1.0.5) (2024-07-08)
+
+
+### Bug Fixes
+
+* skip ci which is the default message from semantic-release/git ([5756fe4](https://github.com/jenniferarnesen/dhis2-ci-demo/commit/5756fe4cb6828e38404cadb52bac493e54cebf34))
+
 ## [1.0.4](https://github.com/jenniferarnesen/dhis2-ci-demo/compare/v1.0.3...v1.0.4) (2024-07-08)
 
 
