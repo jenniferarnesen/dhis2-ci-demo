@@ -24,24 +24,8 @@
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
       "@semantic-release/npm",
-      [
-        "@semantic-release/exec",
-        {
-          "prepareCmd": "yarn build"
-        }
-      ],
       "@semantic-release/git",
-      [
-        "@semantic-release/github",
-        {
-          "assets": [
-            {
-              "path": "build/bundle/*.zip",
-              "label": "DHIS2 app bundle"
-            }
-          ]
-        }
-      ]
+      "@semantic-release/github"
     ]
   }
 }
