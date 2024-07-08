@@ -11,7 +11,11 @@
     "deploy": "d2-app-scripts deploy"
   },
   "devDependencies": {
-    "@dhis2/cli-app-scripts": "^10.3.9"
+    "@dhis2/cli-app-scripts": "^10.3.9",
+    "@semantic-release/changelog": "^5",
+    "@semantic-release/exec": "^6.0.3",
+    "@semantic-release/git": "^9",
+    "semantic-release": "^17"
   },
   "dependencies": {
     "@dhis2/app-runtime": "^3.9.4"
@@ -23,9 +27,26 @@
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
       "@semantic-release/npm",
+      [
+        "@semantic-release/exec",
+        {
+          "prepareCmd": "yarn build"
+        }
+      ],
       "@semantic-release/git",
-      "@semantic-release/github"
+      [
+        "@semantic-release/github",
+        {
+          "assets": [
+            {
+              "path": "build/bundle/*.zip",
+              "label": "DHIS2 app bundle"
+            }
+          ]
+        }
+      ]
     ]
   }
 }
