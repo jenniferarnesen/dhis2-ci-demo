@@ -18,7 +18,7 @@
     "semantic-release": "^17"
   },
   "dependencies": {
-    "@dhis2/app-runtime": "^3.9.4"
+    "@dhis2/app-runtime": "^3.10.5"
   },
   "release": {
     "branches": [
