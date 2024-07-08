@@ -5,11 +5,8 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"POT-Creation-Date: 2024-07-08T09:00:45.829Z\n"
-"PO-Revision-Date: 2024-07-08T09:00:45.830Z\n"
+"POT-Creation-Date: 2024-07-08T14:55:49.241Z\n"
+"PO-Revision-Date: 2024-07-08T14:55:49.242Z\n"
 
 msgid "Hello {{name}}, this is where the app goes!"
 msgstr "Hello {{name}}, this is where the app goes!"
-
-msgid "Welcome to DHIS2!"
-msgstr "Welcome to DHIS2!"
