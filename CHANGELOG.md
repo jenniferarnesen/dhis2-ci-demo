@@ -1,3 +1,19 @@
+## [1.0.4](https://github.com/jenniferarnesen/dhis2-ci-demo/compare/v1.0.3...v1.0.4) (2024-07-08)
+
+
+### Bug Fixes
+
+* changelog causing problems so delete for now ([303eec9](https://github.com/jenniferarnesen/dhis2-ci-demo/commit/303eec9eca2c26e6067eedc67fc4ab74be9fdcba))
+* have to install some semantic release plugins ([322292f](https://github.com/jenniferarnesen/dhis2-ci-demo/commit/322292f20e9d9cd15f98b827eb36d8a9429dd4e3))
+* lint before release ([72b44da](https://github.com/jenniferarnesen/dhis2-ci-demo/commit/72b44da7e5aa98aa4e06f8d617d19319bcc0414a))
+* move workflow to correct dir ([2c3e8a0](https://github.com/jenniferarnesen/dhis2-ci-demo/commit/2c3e8a020ed8ac94bfbcf8f498a430c7c5c512c6))
+* need node 20.8 ([076d8f5](https://github.com/jenniferarnesen/dhis2-ci-demo/commit/076d8f59eb9e0e38c66d9af37b6addafee64ca70))
+* new string ([709f67f](https://github.com/jenniferarnesen/dhis2-ci-demo/commit/709f67f6ad7b2c49211afa9229205f648f0439e0))
+* no lint now ([55b3fe9](https://github.com/jenniferarnesen/dhis2-ci-demo/commit/55b3fe9bf5935c7427d7824a54e127f8fc48c841))
+* remove more plugins that ci cant find ([4add6b8](https://github.com/jenniferarnesen/dhis2-ci-demo/commit/4add6b8359d31d3a38cfe1b3af4da0ae26abde83))
+* semantic-release v 20 ([bae894a](https://github.com/jenniferarnesen/dhis2-ci-demo/commit/bae894ae87474f13c277ba4233ae31215490d2be))
+* try 2 ([902f363](https://github.com/jenniferarnesen/dhis2-ci-demo/commit/902f3633d421af196c237eb5062068466d46e61c))
+
 ## [1.0.3](https://github.com/jenniferarnesen/dhis2-ci-demo/compare/v1.0.2...v1.0.3) (2024-07-05)
 
 
