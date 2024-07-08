@@ -22,7 +22,7 @@ const MyApp = () => (
                         name: data.me.name,
                       })}
                     </h1>
-                    <h3>{i18n.t("Welcome to DHIS2!")}</h3>
+                    <h3>"Welcome to DHIS2 you wild and crazy guy!"</h3>
                   </>
                 );
             }}
