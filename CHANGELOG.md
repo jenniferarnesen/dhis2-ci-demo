@@ -1,3 +1,11 @@
+## [1.0.10](https://github.com/jenniferarnesen/dhis2-ci-demo/compare/v1.0.9...v1.0.10) (2024-07-08)
+
+
+### Bug Fixes
+
+* forgot comma ([f5c6039](https://github.com/jenniferarnesen/dhis2-ci-demo/commit/f5c6039fbd3f655fcc16142c9842b51ec5b83731))
+* why am i unauthorized to publish to apphub ([6052b90](https://github.com/jenniferarnesen/dhis2-ci-demo/commit/6052b90c06d706506aded20915d85e38b864190a))
+
 ## [1.0.9](https://github.com/jenniferarnesen/dhis2-ci-demo/compare/v1.0.8...v1.0.9) (2024-07-08)
 
 
