@@ -1,3 +1,10 @@
+## [1.0.9](https://github.com/jenniferarnesen/dhis2-ci-demo/compare/v1.0.8...v1.0.9) (2024-07-08)
+
+
+### Bug Fixes
+
+* update app id ([64034b0](https://github.com/jenniferarnesen/dhis2-ci-demo/commit/64034b0f381f0a609263deb0cb73a75948644782))
+
 ## [1.0.8](https://github.com/jenniferarnesen/dhis2-ci-demo/compare/v1.0.7...v1.0.8) (2024-07-08)
 
 
