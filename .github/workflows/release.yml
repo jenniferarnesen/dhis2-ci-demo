@@ -34,4 +34,7 @@ jobs:
               env:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               run: npx -p semantic-release@20.0.0 semantic-release
+
+            - name: Publish to AppHub
+              run: yarn run d2-app-scripts publish
             
