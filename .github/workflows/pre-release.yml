@@ -3,7 +3,7 @@ name: 'prepare release'
 on:
     push:
         branches:
-            - 'main'
+            - 'master'
 
 env:
     GIT_AUTHOR_NAME: 'jenjonesarnesen'

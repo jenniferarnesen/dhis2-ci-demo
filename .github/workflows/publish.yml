@@ -3,7 +3,7 @@ name: 'publish app'
 on:
     push:
         branches:
-            - 'main'
+            - 'master'
         
 
 env:
