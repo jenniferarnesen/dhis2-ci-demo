@@ -38,5 +38,5 @@ jobs:
             - name: Publish to AppHub
               run: yarn run d2-app-scripts publish
               env:
-                APPHUB_TOKEN: ${{ secrets.APPHUB_TOKEN }}
+                D2_APP_HUB_TOKEN: ${{ secrets.APPHUB_TOKEN }}
             
