@@ -1,3 +1,10 @@
+## [1.0.15](https://github.com/jenniferarnesen/dhis2-ci-demo/compare/v1.0.14...v1.0.15) (2024-07-09)
+
+
+### Bug Fixes
+
+* check for correct commit msg ([29ff67b](https://github.com/jenniferarnesen/dhis2-ci-demo/commit/29ff67b9225352a56dcb7192d3f48a5219c79336))
+
 ## [1.0.14](https://github.com/jenniferarnesen/dhis2-ci-demo/compare/v1.0.13...v1.0.14) (2024-07-09)
 
 
