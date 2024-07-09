@@ -1,3 +1,12 @@
+## [1.0.11](https://github.com/jenniferarnesen/dhis2-ci-demo/compare/v1.0.10...v1.0.11) (2024-07-09)
+
+
+### Bug Fixes
+
+* ugprade app-runtime ([9d11236](https://github.com/jenniferarnesen/dhis2-ci-demo/commit/9d11236c482318597abd023875e5d9bc55bd266b))
+* upgrade cli-app-scripts ([a5400d5](https://github.com/jenniferarnesen/dhis2-ci-demo/commit/a5400d583450f19f81d6b36c6e7b1dbdb8a7c5e0))
+* yarn-deduplicate ([8713cb2](https://github.com/jenniferarnesen/dhis2-ci-demo/commit/8713cb267e243534aa6981567f56393af5140bc4))
+
 ## [1.0.10](https://github.com/jenniferarnesen/dhis2-ci-demo/compare/v1.0.9...v1.0.10) (2024-07-08)
 
 
