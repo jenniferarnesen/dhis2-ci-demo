@@ -1,3 +1,10 @@
+## [1.0.17](https://github.com/jenniferarnesen/dhis2-ci-demo/compare/v1.0.16...v1.0.17) (2024-07-09)
+
+
+### Bug Fixes
+
+* try semantic-release 20 ([571a83c](https://github.com/jenniferarnesen/dhis2-ci-demo/commit/571a83c3651dea3fdeb4ac6dc6b17437ea631895))
+
 ## [1.0.16](https://github.com/jenniferarnesen/dhis2-ci-demo/compare/v1.0.15...v1.0.16) (2024-07-09)
 
 
