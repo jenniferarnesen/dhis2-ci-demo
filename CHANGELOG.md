@@ -1,3 +1,10 @@
+## [1.0.14](https://github.com/jenniferarnesen/dhis2-ci-demo/compare/v1.0.13...v1.0.14) (2024-07-09)
+
+
+### Bug Fixes
+
+* move semantic-release config to separate file ([36150ec](https://github.com/jenniferarnesen/dhis2-ci-demo/commit/36150ec816894e4768351dfdf70e67a5ad434dfe))
+
 ## [1.0.13](https://github.com/jenniferarnesen/dhis2-ci-demo/compare/v1.0.12...v1.0.13) (2024-07-09)
 
 
