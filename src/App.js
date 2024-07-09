@@ -18,11 +18,11 @@ const MyApp = () => (
                 return (
                   <>
                     <h1>
-                      {i18n.t("Hello {{name}}, this is where the app goes!", {
+                      {i18n.t("Hello {{name}}, this is where the app goes", {
                         name: data.me.name,
                       })}
                     </h1>
-                    <h3>"Welcome to DHIS2 you wild and crazy guy!"</h3>
+                    <h3>"Welcome to DHIS2"</h3>
                   </>
                 );
             }}
