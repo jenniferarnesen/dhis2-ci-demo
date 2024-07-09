@@ -1,3 +1,10 @@
+## [1.0.12](https://github.com/jenniferarnesen/dhis2-ci-demo/compare/v1.0.11...v1.0.12) (2024-07-09)
+
+
+### Bug Fixes
+
+* add new app id ([01d7e10](https://github.com/jenniferarnesen/dhis2-ci-demo/commit/01d7e10714dfc27fe39ebe6bdb10fad7a9aa616a))
+
 ## [1.0.11](https://github.com/jenniferarnesen/dhis2-ci-demo/compare/v1.0.10...v1.0.11) (2024-07-09)
 
 
