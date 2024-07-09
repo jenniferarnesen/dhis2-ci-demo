@@ -1,3 +1,10 @@
+## [1.0.16](https://github.com/jenniferarnesen/dhis2-ci-demo/compare/v1.0.15...v1.0.16) (2024-07-09)
+
+
+### Bug Fixes
+
+* use token instead of apikey ([5a06876](https://github.com/jenniferarnesen/dhis2-ci-demo/commit/5a06876f4df8acbd902dbc7e8d50f1c085d69586))
+
 ## [1.0.15](https://github.com/jenniferarnesen/dhis2-ci-demo/compare/v1.0.14...v1.0.15) (2024-07-09)
 
 
