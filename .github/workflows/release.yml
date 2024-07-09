@@ -12,7 +12,6 @@ env:
     GIT_COMMITTER_EMAIL: 'jennifer@dhis2.org'
     GH_TOKEN: ${{secrets.GH_TOKEN}}
     D2_APP_HUB_API_KEY: ${{secrets.APPHUB_TOKEN}}
-    D2_APP_HUB_TOKEN: ${{ secrets.APPHUB_TOKEN }}
     CI: true
 
 jobs:
