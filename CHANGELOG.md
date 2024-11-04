@@ -1,3 +1,10 @@
+## [1.0.19](https://github.com/jenniferarnesen/dhis2-ci-demo/compare/v1.0.18...v1.0.19) (2024-11-04)
+
+
+### Bug Fixes
+
+* skip pushing bundle to github for now ([#4](https://github.com/jenniferarnesen/dhis2-ci-demo/issues/4)) ([c223f96](https://github.com/jenniferarnesen/dhis2-ci-demo/commit/c223f9666b236bc0a279c3b5ae3d5f7054b8e007))
+
 ## [1.0.18](https://github.com/jenniferarnesen/dhis2-ci-demo/compare/v1.0.17...v1.0.18) (2024-11-04)
 
 
