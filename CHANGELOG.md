@@ -1,3 +1,12 @@
+## [1.0.18](https://github.com/jenniferarnesen/dhis2-ci-demo/compare/v1.0.17...v1.0.18) (2024-11-04)
+
+
+### Bug Fixes
+
+* check for build file before apphub publish ([927b4f5](https://github.com/jenniferarnesen/dhis2-ci-demo/commit/927b4f51a5d39d02d81d509cb5cd174cde0e9bd3))
+* use default which is angular ([#3](https://github.com/jenniferarnesen/dhis2-ci-demo/issues/3)) ([33c5cff](https://github.com/jenniferarnesen/dhis2-ci-demo/commit/33c5cff01000d88fdd28bf3ddff7a0bd5bdf0ecd))
+* use github_token ([#2](https://github.com/jenniferarnesen/dhis2-ci-demo/issues/2)) ([b419d88](https://github.com/jenniferarnesen/dhis2-ci-demo/commit/b419d887323ab84335f7d3a1dc5cc2d014ac67a3))
+
 ## [1.0.17](https://github.com/jenniferarnesen/dhis2-ci-demo/compare/v1.0.16...v1.0.17) (2024-07-09)
 
 
