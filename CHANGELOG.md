@@ -1,3 +1,10 @@
+## [1.0.20](https://github.com/jenniferarnesen/dhis2-ci-demo/compare/v1.0.19...v1.0.20) (2024-11-04)
+
+
+### Bug Fixes
+
+* use env var instead of set-output ([#5](https://github.com/jenniferarnesen/dhis2-ci-demo/issues/5)) ([7fac9bc](https://github.com/jenniferarnesen/dhis2-ci-demo/commit/7fac9bc6b3f9f629515a85e752268ef6c23dab21))
+
 ## [1.0.19](https://github.com/jenniferarnesen/dhis2-ci-demo/compare/v1.0.18...v1.0.19) (2024-11-04)
 
 
