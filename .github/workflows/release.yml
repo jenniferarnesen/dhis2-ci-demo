@@ -11,12 +11,11 @@ env:
     GIT_COMMITTER_NAME: 'jenjonesarnesen'
     GIT_COMMITTER_EMAIL: 'jennifer@dhis2.org'
     GH_TOKEN: ${{secrets.GH_TOKEN}}
-    D2_APP_HUB_TOKEN: ${{secrets.APPHUB_TOKEN}}
+    D2_APP_HUB_TOKEN: ${{secrets.DHIS2_BOT_APPHUB_TOKEN}}
     CI: true
 
 jobs:
     release:
-        if: ${{ !contains(github.event.head_commit.message, '[skip release]') }}
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
@@ -35,6 +34,16 @@ jobs:
               env:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+            - name: Set build-exists output
+              id: check_build
+              run: |
+                  if ls build/bundle/maps-*.zip 1> /dev/null 2>&1; then
+                      echo "::set-output name=build_exists::true"
+                  else
+                      echo "::set-output name=build_exists::false"
+                  fi
+
             - name: Publish to AppHub
+              if: steps.check_build.outputs.build_exists == 'true'
               run: yarn run d2-app-scripts publish
             
