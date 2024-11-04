@@ -1,3 +1,10 @@
+## [1.0.21](https://github.com/jenniferarnesen/dhis2-ci-demo/compare/v1.0.20...v1.0.21) (2024-11-04)
+
+
+### Bug Fixes
+
+* use correct bundle name ([#6](https://github.com/jenniferarnesen/dhis2-ci-demo/issues/6)) ([95c3c5e](https://github.com/jenniferarnesen/dhis2-ci-demo/commit/95c3c5e956837d898ba93b5940ffd9f599e76a3a))
+
 ## [1.0.20](https://github.com/jenniferarnesen/dhis2-ci-demo/compare/v1.0.19...v1.0.20) (2024-11-04)
 
 
