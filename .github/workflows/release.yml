@@ -38,7 +38,7 @@ jobs:
             - name: Set build-exists output
               id: check_build
               run: |
-                  if ls build/bundle/maps-*.zip 1> /dev/null 2>&1; then
+                  if ls build/bundle/jennifer-demo-app-*.zip 1> /dev/null 2>&1; then
                       echo "build_exists=true" >> $GITHUB_ENV
                   else
                       echo "build_exists=false" >> $GITHUB_ENV
