@@ -13,6 +13,7 @@ env:
     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     D2_APP_HUB_TOKEN: ${{secrets.DHIS2_BOT_APPHUB_TOKEN}}
     CI: true
+    build_exists: false
 
 jobs:
     release:
@@ -38,12 +39,12 @@ jobs:
               id: check_build
               run: |
                   if ls build/bundle/maps-*.zip 1> /dev/null 2>&1; then
-                      echo "::set-output name=build_exists::true"
+                      echo "build_exists=true" >> $GITHUB_ENV
                   else
-                      echo "::set-output name=build_exists::false"
+                      echo "build_exists=false" >> $GITHUB_ENV
                   fi
 
             - name: Publish to AppHub
-              if: steps.check_build.outputs.build_exists == 'true'
+              if: env.build_exists == 'true'
               run: yarn run d2-app-scripts publish
             
