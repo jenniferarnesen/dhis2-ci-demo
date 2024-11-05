@@ -24,7 +24,7 @@ const MyApp = () => (
                     </h1>
                     <h3>
                       "Welcome back today Nov 4 submitting a fix but not
-                      releasing"
+                      releasing again"
                     </h3>
                   </>
                 );
