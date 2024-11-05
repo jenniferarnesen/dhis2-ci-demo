@@ -1,3 +1,11 @@
+## [1.0.22](https://github.com/jenniferarnesen/dhis2-ci-demo/compare/v1.0.21...v1.0.22) (2024-11-05)
+
+
+### Bug Fixes
+
+* add some text [skip release] ([#9](https://github.com/jenniferarnesen/dhis2-ci-demo/issues/9)) ([69785db](https://github.com/jenniferarnesen/dhis2-ci-demo/commit/69785dbe5b847b94bc0c84a3a27b24ac20672487))
+* fixed something but [skip ci] ([#8](https://github.com/jenniferarnesen/dhis2-ci-demo/issues/8)) ([5302586](https://github.com/jenniferarnesen/dhis2-ci-demo/commit/5302586a463954ab9d9e3e1b242973ef70f8eb59))
+
 ## [1.0.21](https://github.com/jenniferarnesen/dhis2-ci-demo/compare/v1.0.20...v1.0.21) (2024-11-04)
 
 
