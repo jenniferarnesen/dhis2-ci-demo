@@ -22,7 +22,10 @@ const MyApp = () => (
                         name: data.me.name,
                       })}
                     </h1>
-                    <h3>"Welcome back today Nov 4 and getting darker"</h3>
+                    <h3>
+                      "Welcome back today Nov 4 submitting a fix but not
+                      releasing"
+                    </h3>
                   </>
                 );
             }}
